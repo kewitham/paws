@@ -1,0 +1,34 @@
+{
+  "name": "pawsapp",
+  "version": "1.0.0",
+  "description": "dog calendar app",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "logger": "^0.0.1",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kewitham/paws.git"
+  },
+  "keywords": [
+    "paws"
+  ],
+  "author": "kewitham@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kewitham/paws/issues"
+  },
+  "homepage": "https://github.com/kewitham/paws#readme"
+}
