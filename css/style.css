@@ -119,6 +119,27 @@ a:visited {
     padding: 200px 0;
 }
 
+#slide2a {
+    background-image: url('../images/play.jpg');
+    background-color: #1b5970;
+    color: #ffffff;
+    padding: 200px 0;
+}
+
+#slide2b {
+    background-image: url('../images/groom.jpg');
+    background-color: #1b5970;
+    color: #ffffff;
+    padding: 200px 0;
+}
+
+#slide2c {
+    background-image: url('../images/walk.jpg');
+    background-color: #1b5970;
+    color: #ffffff;
+    padding: 200px 0;
+}
+
 #slide2 h1 {
     font-size: 3.8em;
     letter-spacing: -3px;
@@ -415,4 +436,38 @@ ul {
 }
 .container .info span .fa {
   color: #EF3B3A;
+}
+
+#about_dog{
+	color: #1b5970;
+	padding-left: 40%;
+	padding-top: 35px;
+	font-size: 25px;
+	margin-top: 30px;
+	background: rgba(242, 242, 242, 0.5);
+		
+}
+
+
+
+#form_sub {
+	margin-left: 10%;
+	color: #fff;
+	background-color:#0a3342;
+	font-size: 25px;
+	margin-bottom: 10%;
+
+}
+
+.contact{
+	background: rgba(242, 242, 242, 0.7);
+}
+
+.dognamefield, .negativ{
+	margin-left: -70px;
+	
+}
+
+select{
+	margin-left: -70px;
 }

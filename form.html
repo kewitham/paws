@@ -28,6 +28,7 @@
                     <li data-slide="2"></li>
                     <li data-slide="3">Appointment</li>
                     <li data-slide="4">Contact</li>
+                    <li>Log Out</li>
                 </ul>
             </div>
         </div>
@@ -35,13 +36,13 @@
     <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div id="content" class="grid_7">
-                <h1>Welcome to Pawfection</h1>
-                <h2>Everything your pet needs and more!</h2>
-                <p>Your pet's personal concierge service. We provide affectionate care when you can't be there. Grooming, walking, overnight pet sitting, and Vet services come to you. You choose the services, date and time, we will keep a personal schedule for your pet and provide reminders for upcoming scheduled appointments as well as reminders for annual checkups, vaccinations, county licenses and new grooming appointments. You can schedule a single appoitment or join our Classic Canine Club and choose from month to month services or our 12 month full care service. Let us pamper your pet. Sign up today and we can start caring for your pet tomorrow. </p>
+                <h1>Treatments</h1>
+                <h2>Your best friend deserves the very best</h2>
+                <p>Our staff of professional groomers, sitters and vets are all certified by the National Assoiciation of Animal Breeders. So there's no need to worry about your pet while under our care. We strive to make every pet feel loved and ease the stress for them and thier owners! </p>
             </div>
         </div>
     </div>
-    <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+    <div class="slide" id="slide2c" data-slide="2" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div id="content" class="grid_12">
                 <!--<h1>Images....</h1>
@@ -52,15 +53,57 @@
     <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div id="content" class="grid_12">
-                <h1>forms go under here</h1>
-                <h2>MAke them look nice!</h2>
+                <h1>Please fill out the following</h1>
+                <h2>Your dog will thank you later</h2>
+                <form id="about_dog">
+                    Services:
+                    <br>
+                    <input type="checkbox" name="Services" value="walk"> Walk
+                    <br>
+                    <input type="checkbox" name="Services" value="groom"> Grooming
+                    <br>
+                    <input type="checkbox" name="Services" value="sitting"> Sitting
+                    <br> Dog's name:
+                    <br>
+                    <input type="text" name="dog_name" class="dognamefield">
+                    <br> Dog's Breed:
+                    <br>
+                    <select>
+                        <option value="Mutt">Mutt</option>
+                        <option value="Labrador">Labrador Retriever</option>
+                        <option value="Shepherd">German Shepherd</option>
+                        <option value="Golden">Golden Retriever</option>
+                        <option value="Bulldog">Bulldog</option>
+                        <option value="French">French Bulldogs</option>
+                        <option value="Yotkshire">Yotkshire Terrier</option>
+                        <option value="Poodle">Poodle</option>
+                    </select>
+                    <br> Dog's temperment:
+                    <br>
+                    <select>
+                        <option value="Loves">Loves everyone!</option>
+                        <option value="Shy">Shy</option>
+                        <option value="mean">Doens't play well with others</option>
+                        <option value="excited">Easily excited</option>
+                    </select>
+                    <br> Dog's specail needs:
+                    <br>
+                    <select>
+                        <option value="None">None needed</option>
+                        <option value="food">Special food</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Pyshical">Pyshical needs</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input id="form_sub" type="submit" value="Submit">
+                </form>
             </div>
-            
         </div>
     </div>
     <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
-            <div id="content" class="grid_12">
+            <div id="content" class="grid_12 contact">
                 <h1>Contact us!</h1>
                 <ul>
                     <h2>
@@ -68,8 +111,9 @@
                     <li>Katie: Manager (951) 555-3875</li>
                     <li>Nathianel: Freeloader (951) 555-8453</li>
                    <li>Taylor: Event cordinator (951) 555-4568</li>
+                   </h2>
                </ul>
-               </h2>
+               
             </div>
         </div>
     </div>
