@@ -53,3 +53,9 @@ jQuery(document).ready(function ($) {
 
 
 });
+
+
+//login button
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
