@@ -57,7 +57,7 @@ a:visited {
 
 .navigation li {
     float: left;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 40px;
 }
 
 .navigation li:hover {
@@ -179,7 +179,6 @@ a:visited {
 #slide3 h2 {
     font-size: 2em;
     color: #1b5970;
-    line-height: 0px;
     padding-bottom: 20px;
     font-weight: 400;
     text-align: center
@@ -470,4 +469,8 @@ ul {
 
 select{
 	margin-left: -70px;
+}
+
+ul.navigation{
+
 }
