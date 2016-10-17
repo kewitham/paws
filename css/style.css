@@ -100,7 +100,7 @@ a:visited {
 #slide1 h2 {
     font-size: 2em;
     color: #1b5970;
-    line-height: 0px;
+    line-height: 10px;
     padding-bottom: 20px;
     font-weight: 400;
 }
@@ -189,6 +189,55 @@ a:visited {
     color: #ffffff;
     text-align: center;
     font-size: 2em;
+    font-weight: 400;
+}
+
+/* Slide 3a */
+#slide3a {
+    background-color: #b7d1c8;
+}
+
+#slide3a h1 {
+    font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color: #1b5970;
+    font-weight: 700;
+}
+
+#slide3a h2 {
+    font-size: 2em;
+    color: #1b5970;
+    line-height: 0px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+#slide3a p {
+    color: #2f3847;
+}
+
+/* Slide 3b */
+#slide3b {
+    background-image: url('../images/groom2.jpg');
+    background-color: #1b5970;
+    color: #ffffff;
+    padding: 200px 0;
+}
+
+#slide3b h1 {
+    font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#slide3b h2 {
+    font-size: 2em;
+    color: #ffffff;
+    line-height: 0px;
+    padding-bottom: 20px;
     font-weight: 400;
 }
 
@@ -462,15 +511,15 @@ ul {
 	background: rgba(242, 242, 242, 0.7);
 }
 
-.dognamefield, .negativ{
-	margin-left: -70px;
-	
+
+
+
+table{
+	text-align: center;
+	color: #fff;
 }
 
-select{
-	margin-left: -70px;
-}
-
-ul.navigation{
-
+th{
+	text-decoration: underline;
+	color: #d2a621;
 }

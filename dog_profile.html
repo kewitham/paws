@@ -23,22 +23,18 @@
     <div class="menu">
         <div class="container clearfix">
             <div id="logo" class="grid_3">
-                <a href="index.html"> <img src="images/pawlogo.png"></a>
+                <a href="index.html"><img src="images/pawlogo.png"></a>
             </div>
             <div id="nav" class="grid_9 omega">
                 <ul class="navigation">
-                   
-                    <li data-slide="1">About Us</li>
-                    <li data-slide="2"></li>
-                    <li data-slide="3">Confirmation</li>
-                    <li data-slide="4">Contact</li>
-                    <li>Log Out</li>
-                     <a href="form.html">
+                    <a href="form.html">
                         <li>Appointment</li>
                     </a>
-                    <a href="profile.html">
-                        <li>Profile</li>
-                    </a>
+                    <li data-slide="1">About Us</li>
+                    <li data-slide="2"></li>
+                    <li data-slide="3">Profile</li>
+                    <li data-slide="4">Contact</li>
+                    <li>Log Out</li>
                 </ul>
             </div>
         </div>
@@ -46,9 +42,9 @@
     <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div id="content" class="grid_7">
-                <h1>Welcome to Pawfection</h1>
-                <h2>Everything your pet needs and more!</h2>
-                <p>Your pet's personal concierge service. We provide affectionate care when you can't be there. Grooming, walking, overnight pet sitting, and Vet services come to you. You choose the services, date and time, we will keep a personal schedule for your pet and provide reminders for upcoming scheduled appointments as well as reminders for annual checkups, vaccinations, county licenses and new grooming appointments. You can schedule a single appoitment or join our Classic Canine Club and choose from month to month services or our 12 month full care service. Let us pamper your pet. Sign up today and we can start caring for your pet tomorrow. </p>
+                <h1>Dog Profile</h1>
+                <h2>Let the pampering begin</h2>
+                <p>Our staff of professional groomers, sitters and vets are all certified by the National Assoiciation of Animal Breeders. So there's no need to worry about your pet while under our care. We strive to make every pet feel loved and ease the stress for them and thier owners! </p>
             </div>
         </div>
     </div>
@@ -63,9 +59,67 @@
     <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div id="content" class="grid_12">
-                <h1>Congrats!</h1>
-                <h2>You signed up for <span>{{app_time}}this time</span>!</h2>
-                <h2>Can't wait to see you!</h2>
+                <h1>Welcome back</h1>
+                <h2>Let the fun begin!</h2>
+                <form id="about_dog">
+                    <br>
+                    <br> Dog's name:
+                    <br>
+                    <p>{{dog_name}}</p>
+                    
+                    <br> Dog's breed:
+                    <br>
+                    <p>{{dog_breed}}</p>
+                   
+                    <br> Address:
+                    <br>
+                    <p>{{address}}</p>
+                    <br> Phone Number:
+                    <br>
+                    <p>{{number}}</p>
+                    <br>
+                    <br> Dog's temperment:
+                    <br>
+                    <p>{{dog_temp}}</p>
+                    <br> Dog's special needs:
+                    <p>{{dog_need}}</p>
+                    <br>
+                                       <br> Update Phone Number:
+                <br>
+                <input type="text" name="dog_name" class="negativ"> 
+                    <br>Update Dog's Breed:
+                    <br>
+                    
+                    <select>
+                        <option value="Mutt">Mixed Breed</option>
+                        <option value="Labrador">Labrador Retriever</option>
+                        <option value="Shepherd">German Shepherd</option>
+                        <option value="Golden">Golden Retriever</option>
+                        <option value="Bulldog">Bulldog</option>
+                        <option value="French">French Bulldogs</option>
+                        <option value="Yotkshire">Yotkshire Terrier</option>
+                        <option value="Poodle">Poodle</option>
+                    </select>
+                    <br> Update Dog's temperment:
+                    <br>
+                    <select>
+                        <option value="Loves">Loves everyone!</option>
+                        <option value="Shy">Shy</option>
+                        <option value="mean">Doens't play well with others</option>
+                        <option value="excited">Easily excited</option>
+                    </select>
+                    <br> Update Dog's specail needs:
+                    <br>
+                    <select>
+                        <option value="None">None needed</option>
+                        <option value="food">Special food</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Pyshical">Pyshical needs</option>
+                    </select>
+                    <br>
+                    <br>
+                    <button id="form_sub" type="button">Update</button>
+                </form>
             </div>
         </div>
     </div>

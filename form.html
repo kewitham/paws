@@ -62,17 +62,84 @@
                 <h1>Please fill out the following</h1>
                 <h2>Your dog will thank you later</h2>
                 <form id="about_dog">
-                    Services:
+                    {{dog_name}}
                     <br>
-                    <input type="checkbox" name="Services" value="walk"> Walk
+                    <br>Services:
                     <br>
-                    <input type="checkbox" name="Services" value="groom"> Grooming
+                    
+                    <select>
+                        <option value="walk">Walking</option>
+                        <option value="groom">Grooming</option>
+                        <option value="sit">Sitting</option>
+                    </select>
+                     <br>Date:
+                    
                     <br>
-                    <input type="checkbox" name="Services" value="sitting"> Sitting
-                    <br> Dog's name:
+                    <select>
+                        <option value="walk">January</option>
+                        <option value="groom">February</option>
+                        <option value="sit">March</option>
+                        <option value="walk">April</option>
+                        <option value="groom">May</option>
+                        <option value="sit">June</option>
+                        <option value="walk">July</option>
+                        <option value="groom">August</option>
+                        <option value="sit">September</option>
+                        <option value="walk">October</option>
+                        <option value="groom">November</option>
+                        <option value="sit">December</option>
+                    </select>
+                     <select>
+                        <option value="walk">1</option>
+                        <option value="groom">2</option>
+                        <option value="sit">3</option>
+                        <option value="walk">4</option>
+                        <option value="groom">5</option>
+                        <option value="sit">6</option>
+                        <option value="walk">7</option>
+                        <option value="groom">8</option>
+                        <option value="sit">9</option>
+                        <option value="walk">10</option>
+                        <option value="groom">11</option>
+                        <option value="sit">12</option>
+                        <option value="walk">13</option>
+                        <option value="groom">14</option>
+                        <option value="sit">15</option>
+                        <option value="walk">16</option>
+                        <option value="groom">17</option>
+                        <option value="sit">18</option>
+                        <option value="walk">19</option>
+                        <option value="groom">20</option>
+                        <option value="sit">21</option>
+                        <option value="walk">22</option>
+                        <option value="groom">23</option>
+                        <option value="sit">24</option>
+                        <option value="groom">25</option>
+                        <option value="sit">26</option>
+                        <option value="walk">27</option>
+                        <option value="groom">28</option>
+                        <option value="sit">29</option>
+                        <option value="walk">30</option>
+                        <option value="groom">31</option>
+                        
+                    </select>
+
+                    <br>Time(1 hour slots):
+                    
                     <br>
-                    <input type="text" name="dog_name" class="dognamefield">
-                    <br>
+                    <select>
+                        <option value="walk">9-10</option>
+                        <option value="groom">10-11</option>
+                        <option value="sit">11-12</option>
+                        <option value="walk">12-1</option>
+                        <option value="groom">1-2</option>
+                        <option value="sit">2-3</option>
+                        <option value="walk">3-4</option>
+                        <option value="groom">4-5</option>
+                        
+                    </select>
+                    
+                   <br>
                     <br>
                     <input id="form_sub" type="submit" value="Submit">
                 </form>
