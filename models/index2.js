@@ -1,8 +1,15 @@
+'use strict';
+
 var fs = require('fs')
  , path = require('path')
  , Sequelize = require('sequelize')
+ , env  = process.env.NODE_ENV || "development";
+ , config    = require(path.join(__dirname, '..', 'config', 'config.json'))[env];
+
  , lodash = require('lodash')
- , sequelize = new Sequelize('goatjs', 'root', null)
+ // , sequelize = new Sequelize('Pawfection_db' localhost', 'root', null)
+ , sequelize = new Sequelize(config.database, config.username, config.password, config);
+
  , db = {}
 
 fs
@@ -15,6 +22,13 @@ fs
 	 db[model.name] = model
    })
 
+//  This is space for Katie check --- associations -
+   Object.keys(db).forEach(function(modelName) {
+    if ("associate" in db[modelName]) {
+      db[modelName].associate(db);
+    }
+});
+// -----------------------------------------
 module.exports = lodash.extend({
 	sequelize: sequelize, 
 	Sequelize: Sequelize

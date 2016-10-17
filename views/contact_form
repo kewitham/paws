@@ -1,0 +1,38 @@
+this is the contact.handlebars in views/layouts
+
+form(method='post', action = 'contact/send')
+	h1 Sign Up Page
+	.form-group
+		label Name
+		input form-control (type = "text", name="name", placeholder ="Enter name" 
+		.form-group
+		label Email
+		input form-control (type = "text", name="email", placeholder ="Enter yr email address" 
+		.form-group
+		label Message
+		textarea.form-control (type = "text", name="message", placeholder ="Enter message" 
+		button.btn.btn-default (type = "submit") Submit
+
+the above needs to be transformed /modified -- but these are the fields that I want.
+
+
+		--------------------------- cat version
+
+		<form class="create-update-form" action="/users/create" method="POST">
+  <div class="form-group">
+    <label for="un">Username:</label>
+    <input type="text" id="un" name="username">
+  </div>
+
+  <div class="form-group">
+    <label for="em">Email:</label>
+    <input type="text" id="em" name="email">
+  </div>
+
+  <div class="form-group">
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="password">
+  </div>
+
+  <button type="submit">Sign Up!</button>
+</form>
