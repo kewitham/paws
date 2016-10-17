@@ -1,13 +1,25 @@
 var express = require ('express')
-	, routes = require('./routes')
+	// , ks routes = require('./routes')
+	, path = require('express')
+	, bodyParser = require ('body-parser')
+	, cookieParser = require ('cookie-parser')
 	, app = express()
-	, user = require ('./routes/user')
+	, user = require ('./controllers/user_controller')
 	, db = require ('./models')
 	, http = require ('http')
 	, passport = require ('passport')
 	, passportConfig = require ('./config/passport')
-	, home = require ('./routes/home')
-	, application = require('./routes/application')
+	, methodOverride= require('method-override');
+	// , bcrypt = require('bcrypt'); see user.js
+
+var application = require('./controllers/application')
+	, home = require('./controllers/home_controller')
+	, index = require('./controllers/index_controller')
+	, user = require('./controllers/user_controller')
+	
+
+	// Above 4 variables = model controllers (rather than routes)
+
 
 SALT_WORK_FACTOR =12;
 
@@ -23,20 +35,49 @@ app.use(express.cookieParser())
 app.use(express.session ({secret: 'frogsReveryWhereForSecurity'}))
 app.use(passport.initialize())
 app.use(passport.session())
-app.use(app.router)
+// ks app.use(app.router)
 
-if("development" === app.get ('env')){
-	app.use (express.errorHandler())
-}
+app.use('/', application_controller);
+app.use('/home', home_controller);
+app.use('/index', index_controller);
+app.use('/user', user_controller);
 
-app.get('/', routes.index)
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+
+
+// ks if("development" === app.get ('env')){
+// 	app.use (express.errorHandler())
+// }
+
+// error handler
+// no stacktraces leaked to user unless in development environment
+app.use(function(err, req, res, next) {
+  res.status(err.status || 500);
+  res.render('error', {
+    message: err.message,
+    error: (app.get('env') === 'development') ? err : {}
+  });
+});
+
+app.get('/', controller.index_controller)
 app.get('/home', application.IsAuthenticated, home.homepage)
-app.post('/authenticate',
-	passport.authenticate('local', {
-		successRedirect: '/home',
-		failureRedirect: '/'
-	})
-)
+// lines 69-74 first attempt app.post('/authenticate',
+// 	passport.authenticate('local', {
+// 		successRedirect: '/home',
+// 		failureRedirect: '/'
+// 	})
+// ) replaced by lines 75-79
+app.post('/authenticate', passport.authenticate('local'), function(req, res){
+ //  	successRedirect: '/home',
+	// failureRedirect: '/'
+	console.log("passport user", req.user);
+});
+
 app.get ('/logout', application.destroySession)
 app.get ('/signup', user.signUp)
 app.post('/register', user.register)

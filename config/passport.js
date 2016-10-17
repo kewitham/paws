@@ -17,11 +17,11 @@ passport.deserializeUser(function(user, done){
 });
 
 //  for Authentication
-passport.use(new LocalStrategy(
+passport.use(new LocalStrategy{
 	function(username, password, done){
 		db.User.find({where: {id: user.id}}).success(function(user){
 			passwd = user ? user.password : ""
 			isMatch = db.user.validPassword (password, passwd, done, user)
 		});
 	}
-));
+});
