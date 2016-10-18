@@ -50,13 +50,14 @@ app.set('port', process.env.PORT || 3003);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser());
 app.use(cookieParser());
-// app.use(express.session ({secret: 'frogsReveryWhereForSecurity'}));
+app.use(express.session ({secret: 'frogsReveryWhereForSecurity'}));
 app.use(passport.initialize());
-app.use(passport.session({secret: 'frogsReveryWhereForSecurity'}));
+app.use(passport.session());
 
-// ks app.use(app.router)
-app.use('/', application_controller);
+// ks app.use(app.router acc to passportjs.org/docs)
+// app.use('/', application_controller);
 app.use('/home', home_controller);
 app.use('/index', index_controller);
 app.use('/user', user_controller);
@@ -85,6 +86,7 @@ app.use(function(err, req, res, next) {
 
 app.get('/', controller.index_controller)
 app.get('/home', application.IsAuthenticated, home.homepage)
+app.
 // lines 69-74 first attempt app.post('/authenticate',
 // 	passport.authenticate('local', {
 // 		successRedirect: '/home',
@@ -97,7 +99,7 @@ app.get('/home', application.IsAuthenticated, home.homepage)
 // 	console.log("passport user", req.user);
 // });
 
-app.post('/auth', passport.authenticate('local', { successRedirect: '/', failureRedirect: '/auth' }));
+app.post('/login', passport.authenticate('local', { successRedirect: '/', failureRedirect: '/login' }));
 // app.post('/login',
 //   passport.authenticate('local', { successRedirect: '/',
 //                                    failureRedirect: '/login',
@@ -108,7 +110,7 @@ app.get ('/logout', application.destroySession)
 app.get ('/signup', user.signUp)
 app.post('/register', user.register)
 
-db
+
 	.sequelize
 	.sync()
 	.complete (function(err){
