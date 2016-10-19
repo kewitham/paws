@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser'); // for working with cookies
 var bodyParser = require('body-parser');
 var session = require('express-session'); 
 var methodOverride = require('method-override'); // for deletes in express
-
+var passport = require('passport');
 
 // Our model controllers (rather than routes)
 var application_controller = require('./controllers/application_controller');
@@ -25,6 +25,8 @@ var app = express();
 // override POST to have DELETE and PUT
 app.use(methodOverride('_method'))
 
+SALT_WORK_FACTOR = 12;
+
 //allow sessions
 app.use(session({ secret: 'app', cookie: { maxAge: 60000 }}));
 app.use(cookieParser());
@@ -39,13 +41,17 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({secret: 'frogs'}));
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use('/', application_controller);
 app.use('/users', users_controller);

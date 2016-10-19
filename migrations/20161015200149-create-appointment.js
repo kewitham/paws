@@ -11,9 +11,6 @@ module.exports = {
       appointment_time: {
         type: Sequelize.TIME
       },
-      appointment_date:{
-        type: Sequelize.DATEONLY
-      },
       service:{
         type: Sequelize.STRING
       },
@@ -21,14 +18,8 @@ module.exports = {
         type: Sequelize.BOOLEAN
         default: false
       },
-      dog_id: {
-        type: Sequelize.INTEGER
-        references: {
-            model: 'dogs',
-            key: 'id'
-        },
-        onUpdate: 'cascade',
-        onDelete: 'set null'
+      dog_name: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,

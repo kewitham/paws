@@ -12,10 +12,11 @@ app.set('port', process.env.PORT || 3000);
 
 // we sync the models with our db 
 // (thus creating the apropos tables)
+//console.log('lkjsdf;lakjsd;flkjas;dlfkja;sldkfj;alkdfj;laksdjfl;ajdf;lakjdf;lasjdfladf');
 models.sequelize.sync().then(function () {
-	// set our app to listen to the port we set above
   var server = app.listen(app.get('port'), function() {
+	// set our app to listen to the port we set above
   	// then save a log of the listening to our debugger.
-    debug('Express server listening on port ' + server.address().port);
+    console.log('Express server listening on port ' + server.address().port);
   });
 });

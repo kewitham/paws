@@ -14,6 +14,9 @@ module.exports = {
       email: {
         type: Sequelize.STRING
       },
+      password_hash: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

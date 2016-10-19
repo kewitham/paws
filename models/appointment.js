@@ -9,12 +9,12 @@ module.exports = function(sequelize, DataTypes) {
   }, {
     classMethods: {
       associate: function(models) {
-       // appointment.belongsTo(models.dog, {
-         // onDelete: "CASCADE",
-          //foreignKey: {
-            //allowNull: false
-        //  }
-        //})
+        appointment.belongsTo(models.dog, {
+          onDelete: "CASCADE",
+          foreignKey: {
+            allowNull: false
+          }
+        })
         // associations can be defined here
       }
     }

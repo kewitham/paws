@@ -20,15 +20,20 @@ fs
     return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
   })
   .forEach(function(file) {
+   // console.log('here1111111')
     var model = sequelize['import'](path.join(__dirname, file));
+   // console.log('here222222222')
     db[model.name] = model;
   });
+    //console.log('here22222222233333333333')
 
 Object.keys(db).forEach(function(modelName) {
   if (db[modelName].associate) {
     db[modelName].associate(db);
   }
 });
+    //console.log('here22222222233333333333here22222222233333333333here22222222233333333333here22222222233333333333here22222222233333333333')
+
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
