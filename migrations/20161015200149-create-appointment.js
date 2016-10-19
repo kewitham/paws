@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       appointment_time: {
-        type: Sequelize.TIME
+        type: Sequelize.INTEGER
       },
       service:{
         type: Sequelize.STRING

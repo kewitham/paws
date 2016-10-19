@@ -4,17 +4,17 @@ var express = require('express');
 var router  = express.Router();
 
 //this is the users_controller.js file
-router.get('/new', function(req,res) {
-	res.render('users/new');
+router.get('/', function(req,res) {
+	res.render('users/');
 });
 
-router.get('/sign-in', function(req,res) {
-	res.render('users/sign_in');
+router.get('/login', function(req,res) {
+	res.render('users/login');
 });
 
-router.get('/sign-out', function(req,res) {
+router.get('/logout', function(req,res) {
   req.session.destroy(function(err) {
-     res.redirect('/')
+     res.redirect('/logout')
   })
 });
 
@@ -26,7 +26,7 @@ router.post('/login', function(req, res) {
   }).then(function(user) {
 
 		if (user == null){
-			res.redirect('/users/sign-in')
+			res.redirect('/users/login')
 		}
 
 		// Solution:
@@ -58,7 +58,7 @@ router.post('/login', function(req, res) {
         // if the result is anything but true (password invalid)
         else{
         	// redirect user to sign in
-					res.redirect('/users/sign-in')
+					res.redirect('/users/login')
 				}
     });
   })
