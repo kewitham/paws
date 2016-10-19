@@ -486,7 +486,7 @@ ul {
   color: #EF3B3A;
 }
 
-#about_dog{
+.about_dog{
 	color: #1b5970;
 	
 	padding-top: 35px;
@@ -498,14 +498,6 @@ ul {
 
 
 
-#form_sub {
-	
-	color: #fff;
-	background-color:#0a3342;
-	font-size: 25px;
-	margin-bottom: 5%;
-
-}
 
 .contact{
 	background: rgba(242, 242, 242, 0.7);
@@ -513,28 +505,121 @@ ul {
 
 form{
 	text-align: center;
+   
 }
 label{
 	
 	font-size: 28px;
+    color: #2f3847;
  }
 
- button{
+ button, #form_sub {
  	margin-bottom: 70px;
+    margin-top: 35px;
+    color: #fff;
+    background-color:#0a3342;
+    font-size: 25px;
+    margin-bottom: 5%;
+ }
+
+ input {
+        margin-bottom: 70px;
+      
+    font-size: 25px;
+    margin-bottom: 5%;
+
  }
 
 
 table{
 	text-align: center;
-	color: #fff;
+	color: #2f3847;
 }
 
 th{
 	text-decoration: underline;
-	color: #d2a621;
+	color: #fff;
+    font-size: 25px;
+
+    
+}
+
+td{
+    overflow: auto;
+     height: 60px; 
+     width: 130px;
+     border-bottom: solid 1px #2f3847;
 }
 
 .cal_table{
     text-align: center;
     margin-left: 35%;
+}
+
+#new_dog{background:#1b5970)
+color:#fff; }
+
+.login-form{
+    float: left;
+    text-align: center;
+    width: 500px;
+    
+
+}
+.registration-form{
+    text-align: center;
+    width: 500px;
+    float: right;
+
+}
+
+.dogs {
+    background: rgba(242, 242, 242, 0.7);
+    color: #1b5970;
+    height: 1000px;
+    padding-top: 35px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.about_dogs {
+    background: rgba(242, 242, 242, 0.7);
+    color: #1b5970;
+    
+    padding-top: 35px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+#dog_name{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: #fff;
+    color: #1b5970;
+    font-size: 25px;
+    margin-bottom: 0%;
+
+}
+
+ #place-holder-table{
+    text-align: center;
+   margin-left: 25%;
+    float: left;
+    width: 500px;
+    }
+
+     #place-holder{
+    text-align: center;
+   width: 500px;
+    float: left;
+     
+}
+
+#name-font{
+
+    color: #1b5970;
+}
+
+#go_home{
+    margin-left: 40%;
 }

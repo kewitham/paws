@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="public/assets/favicon.png" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
     <title>Pawfection</title>
@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="public/assets/css/style.css" type="text/css" media="screen">
     <!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
     <!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script type="text/javascript">
+         
+            function Redirect() {
+               window.location="index.html";
+            }
+            
+            
+            setTimeout('Redirect()', 30000);
+         </script>
 </head>
 
 <body>
@@ -27,14 +37,10 @@
             </div>
             <div id="nav" class="grid_9 omega">
                 <ul class="navigation">
-                    <a href="form.html">
-                        <li>Appointment</li>
-                    </a>
                     <li data-slide="1">About Us</li>
                     <li data-slide="2"></li>
-                    <li data-slide="3">Profile</li>
+                    <li data-slide="3">Log in</li></a>
                     <li data-slide="4">Contact</li>
-                    <li>Log Out</li>
                 </ul>
             </div>
         </div>
@@ -42,51 +48,28 @@
     <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div id="content" class="grid_7">
-                <h1>Profile</h1>
-                <h2>Let the pampering begin</h2>
-                <p>Our staff of professional groomers, sitters and vets are all certified by the National Assoiciation of Animal Breeders. So there's no need to worry about your pet while under our care. We strive to make every pet feel loved and ease the stress for them and thier owners! </p>
+                <h1>Come back soon!</h1>
+                <h2>We miss you already!</h2>
+                <p>You have now logged out of Pawfection. </p>
+                <p>Don't tell your dog. Who knows what might happen to your favorite thing.</p>
             </div>
         </div>
     </div>
     <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div id="content" class="grid_12">
-                <!--<h1>Images....</h1>
-                <h2>...for other pages will go here. Appointment page will have dogs being walked and playing </h2> -->
             </div>
         </div>
     </div>
     <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div id="content" class="grid_12">
-                <h1>Welcome back</h1>
-                <h2>Let the fun begin!</h2>
-                <form id="about_dog">
-                    <br>
-                    <br> First Name:
-                    <br>
-                    <p>{{first_name}}</p>
-                    <br> Last Name:
-                    <br>
-                    <p>{{last_name}}</p>
-                    <br> Address:
-                    <br>
-                    <p>{{address}}</p>
-                    <br> Phone Number:
-                    <br>
-                    <p>{{number}}</p>
-
-                    <br> Update Phone Number:
-                    <br>
-                    <input type="text" name="number" class="negativ">
-                    <br> Update Address:
-                    <br>
-                    <input type="text" name="address" class="negativ">
-
-                    <br>
-                    <br>
-                    <button id="form_sub" type="button">Update</button>
-                </form>
+            </div>
+            <div class="form-bottom">
+               <h1>Just sit tight!</h1>
+               <h1>You'll be redirected soon!</h1>
+               <h2>Can't wait 30 seconds?</h2>
+               <a href="index.html"> <button id="go_home">  To the home page!  </button></a>
             </div>
         </div>
     </div>
@@ -99,7 +82,7 @@
                     <li>Kylie: Administrative Services Manager (951) 555-5478</li>
                     <li>Katie: Engineering Manager (951) 555-3875</li>
                     <li>Nathianel: Chief Information Officer (951) 555-8453</li>
-                   <li>Taylor: Chief Marketing Officer (951) 555-4568</li>
+                    <li>Taylor: Chief Marketing Officer (951) 555-4568</li>
                    </h2>
                 </ul>
             </div>

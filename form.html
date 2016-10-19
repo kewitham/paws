@@ -27,12 +27,10 @@
             </div>
             <div id="nav" class="grid_9 omega">
                 <ul class="navigation">
-                    <a href="profile.html">
-                        <li>Profile</li>
-                    </a>
+                    
                     <li data-slide="1">About Us</li>
                     <li data-slide="2"></li>
-                    <li data-slide="3">Appointment</li>
+                    <li data-slide="3">Services</li>
                     <li data-slide="4">Contact</li>
                     <li>Log Out</li>
                 </ul>
@@ -42,7 +40,7 @@
     <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div id="content" class="grid_7">
-                <h1>Treatments</h1>
+                <h1>Services</h1>
                 <h2>Your best friend deserves the very best</h2>
                 <p>Our staff of professional groomers, sitters and vets are all certified by the National Assoiciation of Animal Breeders. So there's no need to worry about your pet while under our care. We strive to make every pet feel loved and ease the stress for them and thier owners! </p>
             </div>
@@ -62,65 +60,27 @@
                 <h1>Welcome, {{username}}!</h1>
                 <h1>Please fill out the following</h1>
                 <h2>Your dog will thank you later</h2>
-                <form id="about_dog">
-                    {{dog_name}}
-                    <br>
-                    <br>Services:
+                <form class="about_dogs">
+                
+                 
+                        <label id="name-font" for="email">Dog's Name</label>
+                        <br>
+                        <input type="text" name="email" placeholder="name" id="dog_name" class="form-dogname form-control" id="form-new-dog">
+                  
+                    <br><lable>Services:</lable>
                     <br>
                     <select>
-                        <option value="walk">Walking</option>
-                        <option value="groom">Grooming</option>
-                        <option value="sit">Sitting</option>
+                        <option value="1">Walking</option>
+                        <option value="2">Grooming</option>
+                        <option value="3">Sitting</option>
                     </select>
                     <br>Date:
                     <br>
                     <select>
-                        <option value="walk">January</option>
-                        <option value="groom">February</option>
-                        <option value="sit">March</option>
-                        <option value="walk">April</option>
-                        <option value="groom">May</option>
-                        <option value="sit">June</option>
-                        <option value="walk">July</option>
-                        <option value="groom">August</option>
-                        <option value="sit">September</option>
-                        <option value="walk">October</option>
-                        <option value="groom">November</option>
-                        <option value="sit">December</option>
+                        <option value="walk">Place holder</option>
+                       
                     </select>
-                    <select>
-                        <option value="walk">1</option>
-                        <option value="groom">2</option>
-                        <option value="sit">3</option>
-                        <option value="walk">4</option>
-                        <option value="groom">5</option>
-                        <option value="sit">6</option>
-                        <option value="walk">7</option>
-                        <option value="groom">8</option>
-                        <option value="sit">9</option>
-                        <option value="walk">10</option>
-                        <option value="groom">11</option>
-                        <option value="sit">12</option>
-                        <option value="walk">13</option>
-                        <option value="groom">14</option>
-                        <option value="sit">15</option>
-                        <option value="walk">16</option>
-                        <option value="groom">17</option>
-                        <option value="sit">18</option>
-                        <option value="walk">19</option>
-                        <option value="groom">20</option>
-                        <option value="sit">21</option>
-                        <option value="walk">22</option>
-                        <option value="groom">23</option>
-                        <option value="sit">24</option>
-                        <option value="groom">25</option>
-                        <option value="sit">26</option>
-                        <option value="walk">27</option>
-                        <option value="groom">28</option>
-                        <option value="sit">29</option>
-                        <option value="walk">30</option>
-                        <option value="groom">31</option>
-                    </select>
+                    
                     <br>Time(1 hour slots):
                     <br>
                     <select>

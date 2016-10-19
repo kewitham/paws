@@ -55,11 +55,11 @@
     <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
             <div id="content" class="grid_12">
-                <h1>Log in!</h1>
                 
             </div>
             <div class="form-bottom">
                 <form role="form" action="/users/login" method="POST" class="login-form">
+                <h1>Log in!</h1>
                     <div class="form-group">
                         <label class="sr-only" for="email">Email</label>
                         <br>
@@ -72,65 +72,71 @@
                     </div>
                     <button type="submit" class="btn">Sign in!</button>
                 </form>
-                    <h2>Or sign up</h2>
-            <form role="form" action="/users/create" method="POST" class="registration-form">
+                
+                <form role="form" action="/users/create" method="POST" class="registration-form">
+                <h1>Or sign up</h1>
                 <div class="form-group">
-                    <label class="sr-only" for="Username">Username</label>
+                        <label class="sr-only" for="name">Name</label>
+                        <br>
+                        <input type="text" name="Username" placeholder="Name..." class="form-email form-control" id="form-newname">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="Username">Username</label>
+                        <br>
+                        <input type="text" name="Username" placeholder="Username..." class="form-email form-control" id="form-new-username">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="email">Email</label>
+                        <br>
+                        <input type="text" name="email" placeholder="Email..." class="form-email form-control" id="form-new-email">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <br>
+                        <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-new-password">
+                    </div>
                     <br>
-                    <input type="text" name="Username" placeholder="Username..." class="form-email form-control" id="form-email">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="email">Email</label>
-                    <br>
-                    <input type="text" name="email" placeholder="Email..." class="form-email form-control" id="form-email">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="password">Password</label>
-                    <br>
-                    <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
-                </div>
-                <br>
-                <button type="submit" class="btn">Sign me up!</button>
-            </form>
+                    <button type="submit">Sign me up!</button>
+                </form>
             </div>
-            
         </div>
-        <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-            <div class="container clearfix">
-                <div id="content" class="grid_12 contact">
-                    <h1>Contact us!</h1>
-                    <ul>
-                        <h2>
+    </div>
+    <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+        <div class="container clearfix">
+            <div id="content" class="grid_12 contact">
+                <h1>Contact us!</h1>
+                <ul>
+                    <h2>
                     <li>Kylie: Administrative Services Manager (951) 555-5478</li>
                     <li>Katie: Engineering Manager (951) 555-3875</li>
                     <li>Nathianel: Chief Information Officer (951) 555-8453</li>
                     <li>Taylor: Chief Marketing Officer (951) 555-4568</li>
                    </h2>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-        <script type="text/javascript" src="js/waypoints.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
-        <!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
-        <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36251023-1']);
-        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-        _gaq.push(['_trackPageview']);
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-        </script>
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
 </body>
 
 </html>
