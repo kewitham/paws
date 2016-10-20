@@ -1,21 +1,22 @@
 {
   "development": {
     "username": "root",
-    "password": password,
-    "database": "Pawfection_db",
+    "password": "password",
+    "database": "pawfection_db",
+
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": password,
+    "password": null,
     "database": "Pawfection_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": password,
+    "password": null,
     "database": "Pawfection_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
