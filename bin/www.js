@@ -1,4 +1,4 @@
-var debug = require('debug')('express-example');
+//var debug = require('debug')('express-example');
 
 // we bring in the app we exported from server.js
 var app = require('../server');

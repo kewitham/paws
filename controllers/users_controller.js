@@ -6,10 +6,12 @@ var router  = express.Router();
 //this is the users_controller.js file
 router.get('/', function(req,res) {
 	res.render('users/');
+		layout: 'index'
 });
 
 router.get('/login', function(req,res) {
 	res.render('users/login');
+		layout: 'login'
 });
 
 router.get('/logout', function(req,res) {
@@ -47,20 +49,25 @@ router.post('/login', function(req, res) {
 					// we save the logged in status to the session
           req.session.logged_in = true;
           // the username to the session
-					req.session.user_name = user.user_name;
+					req.session.username = user.username;
 					// the user id to the session
           req.session.user_id = user.id;
           // and the user's email.
           req.session.user_email = user.email;
 
-          res.redirect('/');
-        }
-        // if the result is anything but true (password invalid)
-        else{
-        	// redirect user to sign in
-					res.redirect('/users/login')
-				}
-    });
+          res.render('index', {
+		      user_id: req.session.user_id,
+		      email: req.session.user_email,
+		      logged_in: req.session.logged_in,
+		      username: req.session.username
+				});
+      }
+      // if the result is anything but true (password invalid)
+      else{
+      	// redirect user to sign in
+				res.redirect('/users/login')
+			}
+    })
   })
 });
 
@@ -74,7 +81,7 @@ router.post('/create', function(req,res) {
 		if (users.length > 0){
 			console.log(users)
 			res.send('we already have an email or username for this account')
-		}else{
+		} else {
 
 			// Solution:
 			// =========
@@ -82,40 +89,45 @@ router.post('/create', function(req,res) {
 			// Using bcrypt, generate a 10-round salt,
 			// then use that salt to hash the user's password.
 			bcrypt.genSalt(10, function(err, salt) {
-					bcrypt.hash(req.body.password, salt, function(err, hash) {
-						
-						// Using the User model, create a new user,
-						// storing the email they sent and the hash you just made
-						models.User.create({
-							email: req.body.email,
-							password_hash: hash
-						})
-						// In a .then promise connected to that create method,
-						// save the user's information to req.session
-						// as shown in these comments
-						.then(function(user){
+				bcrypt.hash(req.body.password, salt, function(err, hash) {
+					
+					// Using the User model, create a new user,
+					// storing the email they sent and the hash you just made
+					models.User.create({
+						email: req.body.email,
+						password_hash: hash,
+						username: req.body.username
+					})
+					// In a .then promise connected to that create method,
+					// save the user's information to req.session
+					// as shown in these comments
+					.then(function(user){
 
 
-							// so what's happening here?
-							// we enter the user's session by setting properties to req.
+						// so what's happening here?
+						// we enter the user's session by setting properties to req.
 
-							// we save the logged in status to the session
-		          req.session.logged_in = true;
-		          // the username to the session
-							req.session.username = user.username;
-							// the user id to the session
-		          req.session.user_id = user.id;
-		          // and the user's email.
-		          req.session.user_email = user.email;
+						// we save the logged in status to the session
+	          req.session.logged_in = true;
+	          // the username to the session
+						req.session.username = user.username;
+						// the user id to the session
+	          req.session.user_id = user.id;
+	          // and the user's email.
+	          req.session.user_email = user.email;
 
-		          // redirect to home on login
-							res.redirect('/')
-						});
-					});
-			});
-
+	          // redirect to home on login
+						res.render('calendar', {
+				      user_id: req.session.user_id,
+				      email: req.session.user_email,
+				      logged_in: req.session.logged_in,
+				      username: req.session.username
+    				});
+					})
+				})
+			})
 		}
-	});
+	})
 });
 
 module.exports = router;
