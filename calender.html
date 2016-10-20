@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="public/assets/favicon.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+    <title>Pawfection</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="public/assets/css/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="public/assets/css/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="public/assets/css/style.css" type="text/css" media="screen">
+    <!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
+    <!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="menu">
+        <div class="container clearfix">
+            <div id="logo" class="grid_3">
+                <a href="index.html"> <img src="public/assets/pawlogo.png"> </a>
+            </div>
+            <div id="nav" class="grid_9 omega">
+                <ul class="navigation">
+                    <a href="login.html">
+                        <li>Appointment</li>
+                    </a>
+                    
+                    <li data-slide="1"></li>
+                    <li data-slide="2"></li>
+                    <li data-slide="3">Calender</li>
+                    <li data-slide="4">Contact</li>
+                    <li>Log Out</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+        <div class="container clearfix">
+            <div id="content" class="grid_7">
+                <h1>Congrats!</h1>
+                <h2>You signed up for <span>{{app_time}}!</span>!</h2>
+                <h2>Can't wait to see you!</h2>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="slide2b" data-slide="2" data-stellar-background-ratio="0.5">
+        <div class="container clearfix">
+            <div id="content" class="grid_12">
+                
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+        <div class="container clearfix">
+            <div id="content" class="grid_12">
+                <h1>Calender goes here</h1>
+                <h2>Yup, right under here</h2>
+            </div>
+            <div id="place-holder"><img src="public/assets/calendar.png"></div>
+            <div id="" class="grid_7">
+                
+                <br>
+                <table id="place-holder-table" style="width:100%">
+                    <tr>
+                        <th>Dog</th>
+                        <th>Service</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td>Sir Fluffington</td>
+                        <td>Walking</td>
+                        <td>October 14</td>
+                    </tr>
+                    <tr>
+                        <td>Sam</td>
+                        <td>Grooming</td>
+                        <td>July 20</td>
+                    </tr>
+                    <tr>
+                        <td>Sir Fluffington</td>
+                        <td>Sitting</td>
+                        <td> June 5</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+        <div class="container clearfix">
+            <div id="content" class="grid_12 contact">
+                <h1>Contact us!</h1>
+                <ul>
+                    <h2>
+                    <li>Kylie: Administrative Services Manager (951) 555-5478</li>
+                    <li>Katie: Engineering Manager (951) 555-3875</li>
+                    <li>Nathianel: Chief Information Officer (951) 555-8453</li>
+                   <li>Taylor: Chief Marketing Officer (951) 555-4568</li>
+                   </h2>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+
+</html>

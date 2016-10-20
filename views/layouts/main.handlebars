@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 <link rel="shortcut icon" type="image/png" href="public/assets/favicon.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+    <title>Pawfection</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="public/assets/css/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="public/assets/css/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="public/assets/css/style.css" type="text/css" media="screen">
+
+    <!-- change link paths???-->
+	</head>
+	<body>
+		<p>
+			{{#unless logged_in}}
+				<a href="/users/sign-in">Sign In</a>
+				<a href="/users/new">Sign Up</a>
+			{{/unless}}
+
+			{{#if logged_in}}
+				Welcome {{email}}! <br>
+				You are user {{user_id}}.<br>
+				<a href="/users/sign-out">Sign Out</a>
+			{{/if}}
+		</p>
+		{{{ body }}}
+	</body>
+</HTML>

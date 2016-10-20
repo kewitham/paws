@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="public/assets/favicon.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+    <title>Pawfection</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="public/assets/css/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="public/assets/css/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="public/assets/css/style.css" type="text/css" media="screen">
+    <!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
+    <!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="menu">
+        <div class="container clearfix">
+            <div id="logo" class="grid_3">
+                <a href="index.html"><img src="public/assets/pawlogo.png"></a>
+            </div>
+            <div id="nav" class="grid_9 omega">
+                <ul class="navigation">
+                    <li data-slide="1">About Us</li>
+                    <li data-slide="2"></li>
+                    <li data-slide="3">Log in</li>
+                    <li data-slide="4">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+        <div class="container clearfix">
+            <div id="content" class="grid_7">
+                <h1>Welcome to Pawfection</h1>
+                <h2>Everything your pet needs and more!</h2>
+                <p>Your pet's personal concierge service. We provide affectionate care when you can't be there. Grooming, walking, overnight pet sitting, and Vet services come to you. You choose the services, date and time, we will keep a personal schedule for your pet and provide reminders for upcoming scheduled appointments as well as reminders for annual checkups, vaccinations, county licenses and new grooming appointments. You can schedule a single appointment or join our Classic Canine Club and choose from month to month services or our 12 month full care service. Let us pamper your pet. Sign up today and we can start caring for your pet tomorrow. </p>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+        <div class="container clearfix">
+            <div id="content" class="grid_12">
+                <!--<h1>Images....</h1>
+                <h2>...for other pages will go here. Appointment page will have dogs being walked and playing </h2> -->
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+        <div class="container clearfix">
+            <div id="content" class="grid_12">
+                
+            </div>
+            <div class="form-bottom">
+                <form role="form" action="/users/login" method="POST" class="login-form">
+                <h1>Log in!</h1>
+                    <div class="form-group">
+                        <label class="sr-only" for="email">Username</label>
+                        <br>
+                         <input  id="username" name="username" placeholder="Username" type="text"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="password"><label>Password</label>
+<input id="password" name="password" placeholder="Password" type="password">
+                    </div>
+                    <button type="submit" class="btn">Sign in!</button>
+                </form>
+                
+                <form role="form" action="/users/create" method="POST" class="registration-form">
+                <h1>Or sign up</h1>
+                <div class="form-group">
+                      <label class="sr-only" for=“fullName”>Full Name</label>
+                       <br>
+                       <input type="text" name= "fullName" placeholder= "Full Name..." class="form-email form-control" id= "fullName">
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="sr-only” for="Username">Username</label>
+                        <input type="text" name="newUserName" placeholder="Username..." class="form-email form-control" id="newUserName">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="sr-only" for="email">Email</label>
+                        <input type="text" name="email" placeholder="Email..." class="form-email form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                         <input type="password" name="newPassword" placeholder="Password..." class="form-password form-control" id="newPassword">
+                    </div>
+                    <br>
+                    <button type="submit">Sign me up!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+        <div class="container clearfix">
+            <div id="content" class="grid_12 contact">
+                <h1>Contact us!</h1>
+                <ul>
+                    <h2>
+                    <li>Kylie: Administrative Services Manager (951) 555-5478</li>
+                    <li>Katie: Engineering Manager (951) 555-3875</li>
+                    <li>Nathianel: Chief Information Officer (951) 555-8453</li>
+                    <li>Taylor: Chief Marketing Officer (951) 555-4568</li>
+                   </h2>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+
+</html>
