@@ -4,22 +4,22 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "cron": "^1.1.1",
     "express": "^4.14.0",
     "express-session": "^1.14.1",
     "logger": "^0.0.1",
-    "path": "^0.12.7",
-    "express-session": "^1.14.1",
-    "sequelize": "^3.24.3",
     "method-override": "^2.3.6",
     "morgan": "^1.7.0",
     "nodemailer": "^2.6.4",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
-    "sequelize-cli": "^2.4.0"
+    "sequelize": "^3.24.3",
+    "sequelize-cli": "^2.4.0",
+    "serve-favicon": "^2.3.0"
   },
   "devDependencies": {},
   "scripts": {
