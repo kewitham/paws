@@ -1,0 +1,625 @@
+/* Global */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #d2a621;
+    background-color: #d2a621;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:link {
+    color: #c38000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c38000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #c38000;
+    text-decoration: none;
+}
+
+
+/* Navigation */
+
+.menu {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    z-index: 100;
+}
+
+#logo {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#nav {
+    text-align: right;
+    margin: 30px 0 0 0;
+}
+
+.navigation {
+    float: right;
+    list-style: none;
+    margin: 0;
+}
+
+.navigation li {
+    float: left;
+    padding: 0 0 0 40px;
+}
+
+.navigation li:hover {
+    cursor: pointer;
+    color: #409c91;
+}
+
+.navigation .active {
+    cursor: pointer;
+    color: #1b5970;
+    font-weight: bold;
+}
+
+
+/* General Slides */
+
+.slide {
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 140px 0;
+}
+
+
+/* Slide 1 */
+
+#slide1 {
+    background-color: #b7d1c8;
+}
+
+#slide1 h1 {
+    font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color: #1b5970;
+    font-weight: 700;
+}
+
+#slide1 h2 {
+    font-size: 2em;
+    color: #1b5970;
+    line-height: 10px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+#slide1 p {
+    color: #2f3847;
+}
+
+
+/* Slide 2 */
+
+#slide2 {
+    background-image: url('../logobg1.jpg');
+    background-color: #1b5970;
+    color: #ffffff;
+    padding: 200px 0;
+}
+
+#slide2a {
+    background-image: url('../play.jpg');
+    background-color: #1b5970;
+    color: #ffffff;
+    padding: 200px 0;
+}
+
+#slide2b {
+    background-image: url('../groom.jpg');
+    background-color: #1b5970;
+    color: #ffffff;
+    padding: 200px 0;
+}
+
+#slide2c {
+    background-image: url('../walk.jpg');
+    background-color: #1b5970;
+    color: #ffffff;
+    padding: 200px 0;
+}
+
+#slide2 h1 {
+    font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#slide2 h2 {
+    font-size: 2em;
+    color: #ffffff;
+    line-height: 0px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+
+/* Slide 3 */
+
+#slide3 {
+    background-color: #b7d1c8;
+}
+
+#slide3 p {
+    color: #2f3847;
+}
+
+#slide3 h1 {
+    font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color: #1b5970;
+    font-weight: 700;
+    text-align: center
+}
+
+#slide3 h2 {
+    font-size: 2em;
+    color: #1b5970;
+    padding-bottom: 20px;
+    font-weight: 400;
+    text-align: center
+}
+
+#test {
+    background-color: #bde2df;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+/* Slide 3a */
+#slide3a {
+    background-color: #b7d1c8;
+}
+
+#slide3a h1 {
+    font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color: #1b5970;
+    font-weight: 700;
+}
+
+#slide3a h2 {
+    font-size: 2em;
+    color: #1b5970;
+    line-height: 0px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+#slide3a p {
+    color: #2f3847;
+}
+
+/* Slide 3b */
+#slide3b {
+    background-image: url('../groom2.jpg');
+    background-color: #1b5970;
+    color: #ffffff;
+    padding: 200px 0;
+}
+
+#slide3b h1 {
+    font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#slide3b h2 {
+    font-size: 2em;
+    color: #ffffff;
+    line-height: 0px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+
+/* Slide 4 */
+
+#slide4 {
+    background-image: url('../logobg2.jpg');
+    background-color: #b9b4ae;
+    color: #ffffff;
+}
+
+#slide4 h1 {
+    font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color: #2f3847;
+    font-weight: 700;
+}
+
+#slide4 h2 {
+    font-size: 2em;
+    color: #2f3847;
+    
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+#slide4 p {
+    color: #2f3847;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 1024px) {
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+    #nav {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .navigation {
+        width: 100%;
+        float: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navigation li {
+        float: left;
+        width: 25%;
+        padding: 0;
+    }
+    .slide {
+        background-attachment: fixed;
+        width: 100%;
+        position: relative;
+        padding: 150px 0;
+    }
+    #decorative {
+        display: none;
+    }
+    #content {
+        text-align: center;
+        width: 100%;
+    }
+    #slide1 h1 {
+        line-height: 1em;
+    }
+    #slide1 h2 {
+        line-height: 1em;
+    }
+    #slide2 h1 {
+        line-height: 1em;
+    }
+    #slide2 h2 {
+        line-height: 1em;
+    }
+    #slide3 h1 {
+        line-height: 1em;
+    }
+    #slide3 h2 {
+        line-height: 1em;
+    }
+    #slide4 h1 {
+        line-height: 1em;
+    }
+    #slide4 h2 {
+        line-height: 1em;
+    }
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+    #nav {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .navigation {
+        width: 100%;
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navigation li {
+        float: left;
+        width: 25%;
+    }
+    .slide {
+        background-attachment: fixed;
+        width: 100%;
+        position: relative;
+        padding: 150px 0;
+    }
+    #slide1 h1 {
+        line-height: 1em;
+    }
+    #slide1 h2 {
+        line-height: 1em;
+    }
+    #slide2 h1 {
+        line-height: 1em;
+    }
+    #slide2 h2 {
+        line-height: 1em;
+    }
+    #slide3 h1 {
+        line-height: 1em;
+    }
+    #slide3 h2 {
+        line-height: 1em;
+    }
+    #slide4 h1 {
+        line-height: 1em;
+    }
+    #slide4 h2 {
+        line-height: 1em;
+    }
+}
+
+
+/* login form */ 
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 20% 0 0;
+  margin: auto;
+}
+.log {
+  
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+ 
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.log input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.log button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #1b5970;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.log button:hover,.log button:active,.log button:focus {
+  background: #0a3342;
+}
+.log .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.log .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.log .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+ margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+.about_dog{
+	color: #1b5970;
+	
+	padding-top: 35px;
+	font-size: 25px;
+	margin-top: 30px;
+	background: rgba(242, 242, 242, 0.5);
+		
+}
+
+
+
+
+.contact{
+	background: rgba(242, 242, 242, 0.7);
+}
+
+form{
+	text-align: center;
+   
+}
+label{
+	
+	font-size: 28px;
+    color: #2f3847;
+ }
+
+ button, #form_sub {
+ 	margin-bottom: 70px;
+    margin-top: 35px;
+    color: #fff;
+    background-color:#0a3342;
+    font-size: 25px;
+    margin-bottom: 5%;
+ }
+
+ input {
+        margin-bottom: 70px;
+      
+    font-size: 25px;
+    margin-bottom: 5%;
+
+ }
+
+
+table{
+	text-align: center;
+	color: #2f3847;
+}
+
+th{
+	text-decoration: underline;
+	color: #fff;
+    font-size: 25px;
+
+    
+}
+
+td{
+    overflow: auto;
+     height: 60px; 
+     width: 130px;
+     border-bottom: solid 1px #2f3847;
+}
+
+.cal_table{
+    text-align: center;
+    margin-left: 35%;
+}
+
+#new_dog{background:#1b5970)
+color:#fff; }
+
+.login-form{
+    float: left;
+    text-align: center;
+    width: 500px;
+    
+
+}
+.registration-form{
+    text-align: center;
+    width: 500px;
+    float: right;
+
+}
+
+.dogs {
+    background: rgba(242, 242, 242, 0.7);
+    color: #1b5970;
+    height: 1000px;
+    padding-top: 35px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.about_dogs {
+    background: rgba(242, 242, 242, 0.7);
+    color: #1b5970;
+    
+    padding-top: 35px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+#dog_name{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: #fff;
+    color: #1b5970;
+    font-size: 25px;
+    margin-bottom: 0%;
+
+}
+
+ #place-holder-table{
+    text-align: center;
+   margin-left: 25%;
+    float: left;
+    width: 500px;
+    }
+
+     #place-holder{
+    text-align: center;
+   width: 500px;
+    float: left;
+     
+}
+
+#name-font{
+
+    color: #1b5970;
+}
+
+#go_home{
+    margin-left: 40%;
+}
